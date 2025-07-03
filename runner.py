@@ -1,11 +1,9 @@
 import subprocess
-import os
+from pathlib import Path
 
-# Step 1: Clone the repository
+# Clone the repo
 subprocess.run(["git", "clone", "https://github.com/phillipnoodles/jobrunner.git"], check=True)
 
-# Step 2: Change directory
-os.chdir("jobrunner")
-
-# Step 3: Run the shell script
-subprocess.run(["bash", "runner2.sh"], check=True)
+# Use Path for clarity and cross-platform compatibility
+repo_path = Path.cwd() / "jobrunner"
+subprocess.run(["bash", "runner2.sh"], check=True, cwd=repo_path)
