@@ -1,7 +1,7 @@
 import subprocess
 import os
 
-subprocess.run(["git", "clone", "https://github.com/phillipnoodles/jobrunner.git"], check=True)
+subprocess.run(["git", "clone", "https://github.com/mncedisihlabathini/jobrunner.git"], check=True)
 
 os.chdir("jobrunner")
 
